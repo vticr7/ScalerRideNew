@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>ScalerRide</title>
+</head>
+<body>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form id="booking-form">
+                    <h2>Book Your Cab</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="name" placeholder="Name" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" id="source" placeholder="Source" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" id="destination" placeholder="Destination" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-car"></i>
+                        <select id="car-model" required>
+                            <option value="">Select a Car</option>
+                            <option value="1">Fortuner</option>
+                            <option value="2">City</option>
+                            <option value="3">Punch</option>
+                            <option value="4">Nano</option>
+                            <option value="5">WagonR</option>
+                        </select>
+                    </div>
+                    <div class="button-container">
+                        <button type="button" class="btn" id="book-cab-btn">Book Cab</button>
+                        <button type="button" class="btn" id="view-prices-btn">View Prices and Cabs Details</button>
+                    </div>
+                    <small id="error-message" class="error-message"></small>
+                </form>
+                <div class="booking-confirmation" style="display:none;"></div>
+                <div class="cabs-prices-container" style="display:none;"></div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
